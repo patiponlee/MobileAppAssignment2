@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.egco428.a23265.mobileappassignment2.MainActivity">
+
+    <Button
+        android:id="@+id/signupbtn"
+        android:text="Sign-up"
+        android:textSize="15sp"
+        android:textColor="#FFFFFFFF"
+        android:background="@drawable/round_rect_shape"
+        android:layout_marginBottom="36dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="120dp" />
+
+    <Button
+    android:id="@+id/cancelbtn"
+    android:text="Cancel"
+    android:textSize="15sp"
+    android:textColor="#FFFFFFFF"
+    android:background="@drawable/round_rect_shape"
+    android:layout_marginBottom="20dp"
+        android:layout_height="30dp"
+        android:layout_width="120dp"
+        android:layout_above="@+id/signupbtn"
+        android:layout_alignEnd="@+id/password" />
+
+    <EditText
+        android:layout_width="270dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/password"
+        android:textSize="12sp"
+        android:layout_marginBottom="30dp"
+        android:layout_height="35dp"
+        android:layout_above="@+id/cancelbtn"
+        android:layout_alignStart="@+id/passwordtxt" />
+
+    <TextView
+        android:id="@+id/passwordtxt"
+        android:text="Password"
+        android:textSize="15sp"
+        android:textColor="#FF51C3D4"
+        android:background="@drawable/round_rect_shape1"
+        android:gravity="center"
+        android:layout_width="270dp"
+        android:layout_marginBottom="21dp"
+        android:layout_height="35dp"
+        android:layout_above="@+id/password"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="270dp"
+        android:layout_height="35dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:textSize="12sp"
+        android:layout_marginBottom="15dp"
+        android:id="@+id/username"
+        android:gravity="bottom"
+        android:layout_above="@+id/passwordtxt"
+        android:layout_alignStart="@+id/passwordtxt" />
+
+    <TextView
+        android:id="@+id/usernametxt"
+        android:text="Username"
+        android:textSize="15sp"
+        android:textColor="#FF51C3D4"
+        android:background="@drawable/round_rect_shape1"
+        android:gravity="center"
+        android:layout_marginBottom="17dp"
+        android:layout_width="270dp"
+        android:layout_height="35dp"
+        android:layout_above="@+id/username"
+        android:layout_alignStart="@+id/username" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width = "100dp"
+        android:layout_height = "100dp"
+        android:src = "@drawable/egco"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp" />
+
+    <Button
+        android:id="@+id/signinbtn"
+        android:text="Sign-in"
+        android:textSize="15sp"
+        android:textColor="#FFFFFFFF"
+        android:background="@drawable/round_rect_shape"
+        android:layout_height="30dp"
+        android:layout_width="120dp"
+        android:layout_below="@+id/password"
+        android:layout_alignStart="@+id/password" />
+
+
+</RelativeLayout>

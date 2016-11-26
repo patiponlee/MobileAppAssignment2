@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width = "100dp"
+        android:layout_height = "100dp"
+        android:src = "@drawable/egco"
+        android:layout_marginTop="27dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id = "@+id/circleImageView"/>
+
+    <EditText
+        android:layout_width="270dp"
+        android:textSize="12sp"
+        android:id="@+id/signupusername"
+        android:gravity="bottom"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/signupusernametxt"
+        android:layout_alignStart="@+id/signupusernametxt"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_width="270dp"
+        android:id="@+id/signuppassword"
+        android:textSize="12sp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/signuppasswordtxt"
+        android:layout_alignStart="@+id/signuppasswordtxt"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/signuppasswordtxt"
+        android:text="Password"
+        android:textSize="15sp"
+        android:textColor="#FF51C3D4"
+        android:background="@drawable/round_rect_shape1"
+        android:gravity="center"
+        android:layout_width="270dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/signupusername"
+        android:layout_centerHorizontal="true"
+        android:layout_height="25dp" />
+
+    <TextView
+        android:layout_width="120dp"
+        android:text="Longitude"
+        android:textColor="#FF51C3D4"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_rect_shape1"
+        android:id="@+id/longtitudetxt"
+        android:layout_below="@+id/signuppassword"
+        android:layout_alignEnd="@+id/signuppassword"
+        android:layout_height="25dp" />
+
+    <TextView
+        android:layout_width="120dp"
+        android:text="Latitude"
+        android:textColor="#FF51C3D4"
+        android:gravity="center"
+        android:background="@drawable/round_rect_shape1"
+        android:id="@+id/latitudetxt"
+        android:layout_alignBottom="@+id/longtitudetxt"
+        android:layout_alignStart="@+id/signuppassword"
+        android:layout_height="25dp"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/signupusernametxt"
+        android:text="Username"
+        android:textSize="15sp"
+        android:textColor="#FF51C3D4"
+        android:background="@drawable/round_rect_shape1"
+        android:gravity="center"
+        android:layout_width="270dp"
+        android:layout_marginTop="11dp"
+        android:layout_below="@+id/circleImageView"
+        android:layout_alignStart="@+id/signuppasswordtxt"
+        android:layout_height="25dp" />
+
+    <EditText
+        android:layout_width="120dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:textSize="12sp"
+        android:gravity="bottom|center"
+        android:id="@+id/latitude"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/longtitude"
+        android:layout_alignBottom="@+id/longtitude"
+        android:layout_alignStart="@+id/latitudetxt" />
+
+    <EditText
+        android:layout_width="120dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:textSize="12sp"
+        android:gravity="bottom|center"
+        android:layout_marginTop="15dp"
+        android:id="@+id/longtitude"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/longtitudetxt"
+        android:layout_alignStart="@+id/longtitudetxt" />
+
+    <Button
+        android:id="@+id/randombtn"
+        android:text="Random by clicking"
+        android:textSize="15sp"
+        android:textColor="#FFFFFFFF"
+        android:background="@drawable/round_rect_shape"
+        android:layout_width="270dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/latitude"
+        android:layout_alignStart="@+id/latitude"
+        android:layout_marginTop="12dp" />
+
+    <Button
+        android:id="@+id/addbtn"
+        android:text="Add New User"
+        android:textSize="15sp"
+        android:textColor="#FFFFFFFF"
+        android:background="@drawable/round_rect_shape"
+        android:layout_width="270dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/randombtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp" />
+
+
+</RelativeLayout>
